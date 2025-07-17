@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">EasyNote</string>
+
+    <string name="filter_all">All</string>
+    <string name="filter_important">Most Important</string>
+    <string name="filter_unimportant">Least Important</string>
+    <string name="filter_favorite">Fav</string>
+    <string name="filter_location">📍</string>
+    <string name="notes_title">Title</string>
+    <string name="notes_subtitle">Subtitle</string>
+    <string name="notes_tag">Tag</string>
+    <string name="notes">Note</string>
+    <string name="splash">Quickly Add, Edit and Manage Your Diary Notes!</string>
+
+    <string name="menu_search">Search</string>
+    <string name="menu_language">Language</string>
+    <string name="menu_settings">Settings</string>
+
+    <string name="map_search">Search address...</string>
+    <string name="map_search2">Search</string>
+    <string name="map_chooselocation">Choose a location or enter an address</string>
+    <string name="map_confirm">Confirm Location</string>
+
+    <string name="language_turkish">Türkçe</string>
+    <string name="language_english">English</string>
+    <string name="language_deutsch">Deutsch</string>
+    <string name="language_selection_title">Language Selection</string>
+    <string name="language_selection_message">Select application language</string>
+
+    <string name="location_reminder_channel_name">Location Reminder</string>
+    <string name="location_reminder_channel_description">Location-based note reminders</string>
+    <string name="location_reminder_title">📍 %1$s</string>
+    <string name="location_reminder_text">%1$s\nLocation: %2$s</string>
+
+    <string name="cd_filter">Filter</string>
+    <string name="cd_add_note">Add New Note</string>
+
+    <string name="notification_permission_title">Notification Permission</string>
+    <string name="notification_permission_message">The app needs notification permission to send you notifications.</string>
+    <string name="location_permission_title">Location Permission</string>
+    <string name="location_permission_message">Location permission is needed for location-based reminders.</string>
+    <string name="settings">Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="save_note">Save Note</string>
+    <string name="location_service_active">Location Service Active</string>
+
+    <string name="map_load_error">Map could not be loaded</string>
+    <string name="enter_address">Please enter an address</string>
+    <string name="address_not_found">Address not found</string>
+    <string name="address_search_error">Address search error</string>
+    <string name="select_location">Please select a location</string>
+    <string name="location_permission_required">Location permission required</string>
+    <string name="foreground_location_permission_required">Foreground service location permission required</string>
+    <string name="selected_location">Selected Location: %1$s</string>
+    <string name="unknown_location">Unknown Location</string>
+    
+
+    <string name="title_notes_required">Title and notes fields cannot be empty</string>
+    <string name="location_selected">Location selected: %1$s</string>
+    <string name="alarm_set">Alarm Set!</string>
+    <string name="default_reminder_title">Reminder</string>
+    <string name="default_alarm_note">Alarm set</string>
+    <string name="auto_save_success">Note automatically saved</string>
+    <string name="alarm_cleared_after_notification">Alarm cleared after notification</string>
+
+    <string name="delete_confirmation_message">Are you sure you want to\ndelete the note?</string>
+    <string name="delete_no">No</string>
+    <string name="delete_yes">Yes</string>
+
+    <!-- Firebase Auth Strings -->
+    <string name="login">Sign In</string>
+    <string name="register">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="or">or</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="google_sign_in">Sign ın wıth Google</string>
+    <string name="welcome_message">Welcome, %1$s</string>
+    <string name="auth_error">Authentication error: %1$s</string>
+    <string name="password_reset_sent">Password reset email sent</string>
+    <string name="password_reset_failed">Password reset failed: %1$s</string>
+    <string name="please_fill_all_fields">Please fill all fields</string>
+    <string name="password_min_length">Password must be at least 6 characters</string>
+    <string name="please_enter_email">Please enter your email address</string>
+    <string name="sync_completed">Synchronization completed</string>
+    <string name="sync_error">Synchronization error: %1$s</string>
+    <string name="user_not_signed_in">User not signed in</string>
+    <string name="logout">Sıgn Out</string>
+    <string name="logout_confirmation">Are you sure you want to sign out?</string>
+    <string name="default_web_client_id">647259472954-t6bhqa0mh2cflhd6psnceq0h0vu8n8ni.apps.googleusercontent.com</string>
+    <string name="menu_background">Background</string>
+    <string name="background_selection_title">Select Background</string>
+    <string name="custom_photo_background">My Own Photo</string>
+    <string name="preset_backgrounds">Preset Backgrounds</string>
+    <string name="notification_settings">Notifications</string>
+    <string name="notifications_enabled">Notifications Enabled</string>
+    <string name="notifications_disabled">Notifications Disabled</string>
+
+
+
+
+    <!-- Delete Dialog Strings -->
+    <string name="delete_notes_title">Delete Notes</string>
+    <string name="delete_notes_message">Are you sure you want to delete %1$d notes?</string>
+    <string name="delete">Delete</string>
+
+    <!-- Error Messages -->
+    <string name="data_loading_error">Data loading error: %1$s</string>
+
+    <!-- Common Actions -->
+    <string name="send">Send</string>
+
+    <!-- Firebase Auth Error Messages -->
+    <string name="error_invalid_email">Invalid email address</string>
+    <string name="error_weak_password">Password is too weak</string>
+    <string name="error_email_already_in_use">This email address is already in use</string>
+    <string name="error_user_not_found">User not found</string>
+    <string name="error_wrong_password">Wrong password</string>
+    <string name="error_network_error">Network connection error</string>
+    <string name="error_google_sign_in_failed">Google sign in failed</string>
+    <string name="error_unknown">Unknown error occurred</string>
+    <string name="error_too_many_requests">Too many attempts. Please wait a while.</string>
+    <string name="error_user_disabled">Your account has been disabled.</string>
+    <string name="error_operation_not_allowed">This operation is not allowed at the moment.</string>
+
+    <!-- Account Delete Strings -->
+    <string name="delete_account_title">Delete Account</string>
+    <string name="delete_account_confirmation">Are you sure you want to delete your account?\n\nThis action cannot be undone and all your data will be permanently deleted.</string>
+    <string name="delete_account_success">Your account has been successfully deleted</string>
+    <string name="delete_account_failed">Account deletion failed: %1$s</string>
+    <string name="delete_account_menu">Delete Account</string>
+    <string name="delete_account_direct">Delete Now</string>
+    <string name="delete_account_request">Send Request</string>
+    <string name="error_user_not_logged_in">User not logged in</string>
+    <string name="error_token_not_available">Token not available</string>
+    <string name="error_token_refresh_failed">Token refresh failed</string>
+    <string name="error_invalid_request">Invalid request</string>
+    <string name="error_unauthorized">Unauthorized access</string>
+    <string name="error_forbidden">Access denied</string>
+    <string name="error_token_expired">Token expired</string>
+    <string name="error_invalid_token">Invalid token</string>
+    <string name="error_invalid_response">Invalid response</string>
+    <string name="error_cannot_open_url">Cannot open URL</string>
+
+</resources> 

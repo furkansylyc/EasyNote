@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyNote - Hesap Silme Talebi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            color: #856404;
+        }
+
+        .warning-icon {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e1e5e9;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-secondary {
+            background: #f8f9fa;
+            color: #666;
+            border: 2px solid #e1e5e9;
+        }
+
+        .btn-secondary:hover {
+            background: #e9ecef;
+        }
+
+        .contact-info {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e1e5e9;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .contact-info a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .button-group {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">EN</div>
+        <h1>Hesap Silme Talebi</h1>
+        <p class="description">
+            EasyNote hesabınızı silmek istiyorsanız, lütfen aşağıdaki formu doldurun. 
+            Talebiniz incelendikten sonra size geri dönüş yapılacaktır.
+        </p>
+
+        <div class="warning">
+            <div class="warning-icon">⚠️</div>
+            <strong>Önemli:</strong> Hesap silme işlemi geri alınamaz. 
+            Tüm notlarınız ve verileriniz kalıcı olarak silinecektir.
+        </div>
+
+        <form id="deleteAccountForm">
+            <div class="form-group">
+                <label for="email">E-posta Adresiniz *</label>
+                <input type="email" id="email" name="email" required 
+                       placeholder="ornek@email.com">
+            </div>
+
+            <div class="form-group">
+                <label for="reason">Silme Nedeni *</label>
+                <select id="reason" name="reason" required>
+                    <option value="">Bir neden seçin</option>
+                    <option value="privacy">Gizlilik endişeleri</option>
+                    <option value="unused">Artık kullanmıyorum</option>
+                    <option value="alternative">Alternatif uygulama kullanıyorum</option>
+                    <option value="technical">Teknik sorunlar</option>
+                    <option value="other">Diğer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="feedback">Ek Açıklama</label>
+                <textarea id="feedback" name="feedback" 
+                          placeholder="Varsa ek açıklamanızı buraya yazabilirsiniz..."></textarea>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn btn-primary">Talep Gönder</button>
+                <a href="https://play.google.com/store/apps/details?id=com.furkansoyleyici.easynote" 
+                   class="btn btn-secondary">Uygulamaya Dön</a>
+            </div>
+        </form>
+
+        <div class="contact-info">
+            <p>Alternatif olarak şu adreslerden bize ulaşabilirsiniz:</p>
+            <p>📧 E-posta: <a href="mailto:support@easynote.app">support@easynote.app</a></p>
+            <p>📱 Uygulama İçi: Ayarlar > Hesabı Sil</p>
+        </div>
+    </div>
+
+    <script>
+        // Dil algılama ve yönlendirme
+        function detectLanguageAndRedirect() {
+            const userLanguage = navigator.language || navigator.userLanguage;
+            const language = userLanguage.toLowerCase().split('-')[0];
+            
+            if (language === 'en') {
+                window.location.href = '/account-delete-en.html';
+            } else if (language === 'de') {
+                window.location.href = '/account-delete-de.html';
+            }
+            // Türkçe için varsayılan olarak kalır
+        }
+
+        // Sayfa yüklendiğinde dil kontrolü yap
+        window.addEventListener('load', detectLanguageAndRedirect);
+
+        document.getElementById('deleteAccountForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const reason = document.getElementById('reason').value;
+            const feedback = document.getElementById('feedback').value;
+            
+            // Form verilerini hazırla
+            const formData = {
+                email: email,
+                reason: reason,
+                feedback: feedback,
+                timestamp: new Date().toISOString(),
+                userAgent: navigator.userAgent
+            };
+            
+            // E-posta gönderme simülasyonu
+            const mailtoLink = `mailto:support@easynote.app?subject=Hesap Silme Talebi - ${email}&body=Hesap Silme Talebi:%0D%0A%0D%0AE-posta: ${email}%0D%0ANeden: ${reason}%0D%0AAçıklama: ${feedback}%0D%0A%0D%0ATarih: ${new Date().toLocaleString('tr-TR')}`;
+            
+            // Kullanıcıya bilgi ver
+            alert('Talebiniz alındı! E-posta uygulamanız açılacak. Lütfen e-postayı gönderin.');
+            
+            // E-posta uygulamasını aç
+            window.location.href = mailtoLink;
+        });
+
+        // Form validasyonu
+        document.getElementById('reason').addEventListener('change', function() {
+            const submitBtn = document.querySelector('.btn-primary');
+            if (this.value && document.getElementById('email').value) {
+                submitBtn.disabled = false;
+            } else {
+                submitBtn.disabled = true;
+            }
+        });
+
+        document.getElementById('email').addEventListener('input', function() {
+            const submitBtn = document.querySelector('.btn-primary');
+            if (this.value && document.getElementById('reason').value) {
+                submitBtn.disabled = false;
+            } else {
+                submitBtn.disabled = true;
+            }
+        });
+    </script>
+</body>
+</html> 

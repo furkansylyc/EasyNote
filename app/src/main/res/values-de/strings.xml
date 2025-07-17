@@ -1,0 +1,145 @@
+<resources>
+    <string name="app_name">EasyNote</string>
+
+    <string name="filter_all">Alle</string>
+    <string name="filter_important">Am Wichtigsten</string>
+    <string name="filter_unimportant">Am Unwichtigsten</string>
+    <string name="filter_favorite">Fav</string>
+    <string name="filter_location">📍</string>
+    <string name="notes_title">Titel</string>
+    <string name="notes_subtitle">Untertitel</string>
+    <string name="notes_tag">Tag</string>
+    <string name="notes">Notiz</string>
+    <string name="splash">Füge deine täglichen Notizen schnell hinzu, bearbeite und verwalte sie!</string>
+
+    <string name="menu_search">Suchen</string>
+    <string name="menu_language">Sprache wählen</string>
+    <string name="menu_settings">Einstellungen</string>
+
+    <string name="map_search">Adresse suchen...</string>
+    <string name="map_search2">Suchen</string>
+    <string name="map_chooselocation">Standort wählen oder Adresse eingeben</string>
+    <string name="map_confirm">Standort bestätigen</string>
+
+    <string name="language_turkish">Türkisch</string>
+    <string name="language_english">Englisch</string>
+    <string name="language_deutsch">Deutsch</string>
+    <string name="language_selection_title">Sprachauswahl</string>
+    <string name="language_selection_message">Wählen Sie die Sprache der App</string>
+
+    <string name="location_reminder_channel_name">Standorterinnerung</string>
+    <string name="location_reminder_channel_description">Standortbasierte Notizerinnerungen</string>
+    <string name="location_reminder_title">📍 %1$s</string>
+    <string name="location_reminder_text">%1$s\nStandort: %2$s</string>
+
+    <string name="cd_filter">Filter</string>
+    <string name="cd_add_note">Neue Notiz hinzufügen</string>
+
+    <string name="notification_permission_title">Benachrichtigungsberechtigung</string>
+    <string name="notification_permission_message">Die App benötigt Benachrichtigungsrechte, um Ihnen Mitteilungen zu senden.</string>
+    <string name="location_permission_title">Standortberechtigung</string>
+    <string name="location_permission_message">Für standortbasierte Erinnerungen wird eine Standortberechtigung benötigt.</string>
+    <string name="settings">Einstellungen</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="save_note">Notiz Speichern</string>
+    <string name="location_service_active">Standortdienst aktiv</string>
+
+    <string name="map_load_error">Karte konnte nicht geladen werden</string>
+    <string name="enter_address">Bitte eine Adresse eingeben</string>
+    <string name="address_not_found">Adresse nicht gefunden</string>
+    <string name="address_search_error">Fehler bei der Adresssuche</string>
+    <string name="select_location">Bitte einen Standort auswählen</string>
+    <string name="location_permission_required">Standortberechtigung erforderlich</string>
+    <string name="foreground_location_permission_required">Vordergrund-Standortberechtigung erforderlich</string>
+    <string name="selected_location">Ausgewählter Standort: %1$s</string>
+    <string name="unknown_location">Unbekannter Standort</string>
+
+    <string name="title_notes_required">Titel und Notizfeld dürfen nicht leer sein</string>
+    <string name="location_selected">Standort ausgewählt: %1$s</string>
+    <string name="alarm_set">Alarm eingestellt!</string>
+    <string name="default_reminder_title">Erinnerung</string>
+    <string name="default_alarm_note">Alarm eingestellt</string>
+    <string name="auto_save_success">Notiz automatisch gespeichert</string>
+    <string name="alarm_cleared_after_notification">Alarm nach Benachrichtigung gelöscht</string>
+
+    <string name="delete_confirmation_message">Möchten Sie die Notiz wirklich\löschen?</string>
+    <string name="delete_no">Nein</string>
+    <string name="delete_yes">Ja</string>
+
+    <!-- Firebase Auth Strings -->
+    <string name="login">Anmelden</string>
+    <string name="register">Registrieren</string>
+    <string name="email">E-Mail</string>
+    <string name="password">Passwort</string>
+    <string name="forgot_password">Passwort vergessen</string>
+    <string name="or">oder</string>
+    <string name="sign_in_with_google">Mit Google anmelden</string>
+    <string name="google_sign_in">Melden Sie sich mit Google an</string>
+    <string name="welcome_message">Willkommen, %1$s</string>
+    <string name="auth_error">Authentifizierungsfehler: %1$s</string>
+    <string name="password_reset_sent">Passwort-Reset-E-Mail gesendet</string>
+    <string name="password_reset_failed">Passwort-Reset fehlgeschlagen: %1$s</string>
+    <string name="please_fill_all_fields">Bitte alle Felder ausfüllen</string>
+    <string name="password_min_length">Passwort muss mindestens 6 Zeichen lang sein</string>
+    <string name="please_enter_email">Bitte geben Sie Ihre E-Mail-Adresse ein</string>
+    <string name="sync_completed">Synchronisierung abgeschlossen</string>
+    <string name="sync_error">Synchronisierungsfehler: %1$s</string>
+    <string name="user_not_signed_in">Benutzer nicht angemeldet</string>
+    <string name="logout">Abmelden</string>
+    <string name="logout_confirmation">Möchten Sie sich wirklich abmelden?</string>
+    <string name="default_web_client_id">647259472954-t6bhqa0mh2cflhd6psnceq0h0vu8n8ni.apps.googleusercontent.com</string>
+    <string name="menu_background">Hintergrund</string>
+    <string name="background_selection_title">Hintergrund auswählen</string>
+    <string name="custom_photo_background">Eigenes Foto</string>
+    <string name="preset_backgrounds">Vorgegebene Hintergründe</string>
+    <string name="notification_settings">Benachrichtigungen</string>
+    <string name="notifications_enabled">Benachrichtigungen aktiviert</string>
+    <string name="notifications_disabled">Benachrichtigungen deaktiviert</string>
+
+
+
+
+    <!-- Delete Dialog Strings -->
+    <string name="delete_notes_title">Notizen löschen</string>
+    <string name="delete_notes_message">Sind Sie sicher, dass Sie %1$d Notizen löschen möchten?</string>
+    <string name="delete">Löschen</string>
+
+    <!-- Error Messages -->
+    <string name="data_loading_error">Datenladefehler: %1$s</string>
+
+    <!-- Common Actions -->
+    <string name="send">Senden</string>
+
+    <!-- Firebase Auth Error Messages -->
+    <string name="error_invalid_email">Ungültige E-Mail-Adresse</string>
+    <string name="error_weak_password">Passwort ist zu schwach</string>
+    <string name="error_email_already_in_use">Diese E-Mail-Adresse wird bereits verwendet</string>
+    <string name="error_user_not_found">Benutzer nicht gefunden</string>
+    <string name="error_wrong_password">Falsches Passwort</string>
+    <string name="error_network_error">Netzwerkverbindungsfehler</string>
+    <string name="error_google_sign_in_failed">Google-Anmeldung fehlgeschlagen</string>
+    <string name="error_unknown">Unbekannter Fehler aufgetreten</string>
+    <string name="error_too_many_requests">Zu viele Versuche. Bitte warten Sie einen Moment.</string>
+    <string name="error_user_disabled">Ihr Konto wurde deaktiviert.</string>
+    <string name="error_operation_not_allowed">Dieser Vorgang ist derzeit nicht erlaubt.</string>
+
+    <!-- Account Delete Strings -->
+    <string name="delete_account_title">Konto löschen</string>
+    <string name="delete_account_confirmation">Sind Sie sicher, dass Sie Ihr Konto löschen möchten?\n\nDiese Aktion kann nicht rückgängig gemacht werden und alle Ihre Daten werden dauerhaft gelöscht.</string>
+    <string name="delete_account_success">Ihr Konto wurde erfolgreich gelöscht</string>
+    <string name="delete_account_failed">Kontolöschung fehlgeschlagen: %1$s</string>
+    <string name="delete_account_menu">Konto löschen</string>
+    <string name="delete_account_direct">Jetzt löschen</string>
+    <string name="delete_account_request">Anfrage senden</string>
+    <string name="error_user_not_logged_in">Benutzer nicht angemeldet</string>
+    <string name="error_token_not_available">Token nicht verfügbar</string>
+    <string name="error_token_refresh_failed">Token-Erneuerung fehlgeschlagen</string>
+    <string name="error_invalid_request">Ungültige Anfrage</string>
+    <string name="error_unauthorized">Nicht autorisierter Zugriff</string>
+    <string name="error_forbidden">Zugriff verweigert</string>
+    <string name="error_token_expired">Token abgelaufen</string>
+    <string name="error_invalid_token">Ungültiger Token</string>
+    <string name="error_invalid_response">Ungültige Antwort</string>
+    <string name="error_cannot_open_url">URL kann nicht geöffnet werden</string>
+
+</resources>

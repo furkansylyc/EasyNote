@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyNote - Account Deletion Request</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            color: #856404;
+        }
+
+        .warning-icon {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e1e5e9;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-secondary {
+            background: #f8f9fa;
+            color: #666;
+            border: 2px solid #e1e5e9;
+        }
+
+        .btn-secondary:hover {
+            background: #e9ecef;
+        }
+
+        .contact-info {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e1e5e9;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .contact-info a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .button-group {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">EN</div>
+        <h1>Account Deletion Request</h1>
+        <p class="description">
+            If you want to delete your EasyNote account, please fill out the form below. 
+            We will review your request and get back to you.
+        </p>
+
+        <div class="warning">
+            <div class="warning-icon">⚠️</div>
+            <strong>Important:</strong> Account deletion is irreversible. 
+            All your notes and data will be permanently deleted.
+        </div>
+
+        <form id="deleteAccountForm">
+            <div class="form-group">
+                <label for="email">Your Email Address *</label>
+                <input type="email" id="email" name="email" required 
+                       placeholder="example@email.com">
+            </div>
+
+            <div class="form-group">
+                <label for="reason">Reason for Deletion *</label>
+                <select id="reason" name="reason" required>
+                    <option value="">Select a reason</option>
+                    <option value="privacy">Privacy concerns</option>
+                    <option value="unused">No longer using the app</option>
+                    <option value="alternative">Using alternative app</option>
+                    <option value="technical">Technical issues</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="feedback">Additional Comments</label>
+                <textarea id="feedback" name="feedback" 
+                          placeholder="Please provide any additional comments..."></textarea>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn btn-primary">Submit Request</button>
+                <a href="https://play.google.com/store/apps/details?id=com.furkansoyleyici.easynote" 
+                   class="btn btn-secondary">Back to App</a>
+            </div>
+        </form>
+
+        <div class="contact-info">
+            <p>Alternatively, you can contact us through:</p>
+            <p>📧 Email: <a href="mailto:support@easynote.app">support@easynote.app</a></p>
+            <p>📱 In-App: Settings > Delete Account</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('deleteAccountForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const reason = document.getElementById('reason').value;
+            const feedback = document.getElementById('feedback').value;
+            
+            // Prepare form data
+            const formData = {
+                email: email,
+                reason: reason,
+                feedback: feedback,
+                timestamp: new Date().toISOString(),
+                userAgent: navigator.userAgent
+            };
+            
+            // Email sending simulation
+            const mailtoLink = `mailto:support@easynote.app?subject=Account Deletion Request - ${email}&body=Account Deletion Request:%0D%0A%0D%0AEmail: ${email}%0D%0AReason: ${reason}%0D%0AComments: ${feedback}%0D%0A%0D%0ADate: ${new Date().toLocaleString('en-US')}`;
+            
+            // Inform user
+            alert('Request received! Your email app will open. Please send the email.');
+            
+            // Open email app
+            window.location.href = mailtoLink;
+        });
+
+        // Form validation
+        document.getElementById('reason').addEventListener('change', function() {
+            const submitBtn = document.querySelector('.btn-primary');
+            if (this.value && document.getElementById('email').value) {
+                submitBtn.disabled = false;
+            } else {
+                submitBtn.disabled = true;
+            }
+        });
+
+        document.getElementById('email').addEventListener('input', function() {
+            const submitBtn = document.querySelector('.btn-primary');
+            if (this.value && document.getElementById('reason').value) {
+                submitBtn.disabled = false;
+            } else {
+                submitBtn.disabled = true;
+            }
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/cropped"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/background_selection_title"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <LinearLayout
+        android:id="@+id/customPhotoOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:background="@drawable/menu_item_background"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_background"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Custom Photo" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/custom_photo_background"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/regular" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_arrow_right"
+            android:contentDescription="Arrow" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/preset_backgrounds"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/bold"
+        android:layout_marginBottom="15dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/bg1_option"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/bg1"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Background 1" />
+
+        <ImageView
+            android:id="@+id/bg2_option"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/bg2"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Background 2" />
+
+        <ImageView
+            android:id="@+id/bg3_option"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/bg3"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Background 3" />
+
+        <ImageView
+            android:id="@+id/bg4_option"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/bg4"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Background 4" />
+
+        <ImageView
+            android:id="@+id/bg5_option"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/bg5"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Background 5" />
+
+        <ImageView
+            android:id="@+id/bg6_option"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/bg6"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Background 6" />
+
+        <ImageView
+            android:id="@+id/bg7_option"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/bg7"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Background 7" />
+
+        <ImageView
+            android:id="@+id/bg8_option"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/bg8"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Background 8" />
+
+        <ImageView
+            android:id="@+id/bg9_option"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/bg9"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Background 9" />
+
+        <ImageView
+            android:id="@+id/bg10_option"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/bg10"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Background 10" />
+
+        <ImageView
+            android:id="@+id/bg11_option"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/bg11"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Background 11" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kapat"
+        android:background="@drawable/yes_button"
+        android:textColor="@color/white"
+        android:fontFamily="@font/regular"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout> 

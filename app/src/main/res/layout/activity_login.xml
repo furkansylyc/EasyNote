@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/en"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/bold" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:hint="@string/email"
+                    app:startIconDrawable="@drawable/search"
+                    app:startIconTint="@color/black"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/emailEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Şifre -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:hint="@string/password"
+                    app:startIconDrawable="@drawable/search"
+                    app:startIconTint="@color/black"
+                    app:endIconMode="password_toggle"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/passwordEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:id="@+id/forgotPasswordText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/forgot_password"
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:padding="8dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:fontFamily="@font/regular" />
+
+                <!-- Giriş/Kayıt Butonu -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/loginButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:text="@string/login"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="28dp"
+                    android:backgroundTint="@color/pastel_blue"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/bold" />
+
+                <!-- Mod Değiştirme Butonu -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/registerButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:textAllCaps="false"
+                    android:text="@string/register"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="12dp"
+                    app:cornerRadius="28dp"
+                    android:backgroundTint="@color/pastel_blue"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/regular" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginVertical="20dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginHorizontal="16dp"
+                android:fontFamily="@font/regular" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/black" />
+
+        </LinearLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/googleSignInButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/google_sign_in"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            app:cornerRadius="28dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bold"
+            app:icon="@drawable/ic_google"
+            app:iconGravity="textStart"
+            android:textAllCaps="false"
+            app:iconPadding="12dp"
+            app:iconTint="@null" />
+
+
+        <LinearLayout
+            android:id="@+id/languageFlagsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/flagTR"
+                android:layout_width="48dp"
+                android:layout_height="32dp"
+                android:src="@drawable/flag_tr"
+                android:scaleType="fitCenter"
+                android:layout_marginEnd="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground" />
+
+            <ImageView
+                android:id="@+id/flagEN"
+                android:layout_width="48dp"
+                android:layout_height="32dp"
+                android:src="@drawable/flag_eng"
+                android:scaleType="fitCenter"
+                android:layout_marginEnd="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground" />
+
+            <ImageView
+                android:id="@+id/flagDE"
+                android:layout_width="48dp"
+                android:layout_height="32dp"
+                android:src="@drawable/flag_de"
+                android:scaleType="fitCenter"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground" />
+        </LinearLayout>
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+</ScrollView> 

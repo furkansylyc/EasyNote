@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg1"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/language_selection_title"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/bold"
+        android:layout_marginBottom="16dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/language_selection_message"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/regular"
+        android:layout_marginBottom="48dp"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:spacing="16dp">
+
+        <Button
+            android:id="@+id/btnTurkish"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/language_turkish"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bold"
+            android:background="@drawable/rounded_border"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp" />
+
+        <Button
+            android:id="@+id/btnEnglish"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/language_english"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bold"
+            android:background="@drawable/rounded_border"
+            android:elevation="4dp" />
+
+        <Button
+            android:id="@+id/btnDeutsch"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/language_deutsch"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bold"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_border"
+            android:elevation="4dp" />
+
+    </LinearLayout>
+
+</LinearLayout> 

@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">EasyNote</string>
+
+    <string name="filter_all">Tümü</string>
+    <string name="filter_important">En Önemli</string>
+    <string name="filter_unimportant">En Önemsiz</string>
+    <string name="filter_favorite">Fav</string>
+    <string name="filter_location">📍</string>
+    <string name="notes_title">Başlık</string>
+    <string name="notes_subtitle">Alt Başlık</string>
+    <string name="notes_tag">Etiket</string>
+    <string name="notes">Not</string>
+    <string name="splash">Günlük Notlarını Hızlıca Ekle, Düzenle ve Yönet!</string>
+
+    <string name="menu_search">Ara</string>
+    <string name="menu_language">Dil Seç</string>
+    <string name="menu_settings">Ayarlar</string>
+    <string name="menu_background">Arka Plan</string>
+    <string name="background_selection_title">Arka Plan Seç</string>
+    <string name="custom_photo_background">Kendi Fotoğrafım</string>
+    <string name="preset_backgrounds">Hazır Arka Planlar</string>
+    <string name="notification_settings">Bildirimler</string>
+    <string name="notifications_enabled">Bildirimler açık</string>
+    <string name="notifications_disabled">Bildirimler kapalı</string>
+
+    <string name="map_search">Adres ara...</string>
+    <string name="map_search2">Ara</string>
+    <string name="map_chooselocation">Konum seçin veya Adres girin</string>
+    <string name="map_confirm">Konumu Onayla</string>
+
+    <string name="language_turkish">Türkçe</string>
+    <string name="language_english">English</string>
+    <string name="language_deutsch">Deutsch</string>
+    <string name="language_selection_title">Dil Seçimi</string>
+    <string name="language_selection_message">Uygulama dilini seçin</string>
+    
+
+    <string name="location_reminder_channel_name">Konum Hatırlatıcı</string>
+    <string name="location_reminder_channel_description">Konum tabanlı not hatırlatıcıları</string>
+    <string name="location_reminder_title">📍 %1$s</string>
+    <string name="location_reminder_text">%1$s\nKonum: %2$s</string>
+    <string name="location_service_active">Konum Servisi Aktif</string>
+
+
+    <string name="cd_filter">Filtre</string>
+    <string name="cd_add_note">Yeni Not Ekle</string>
+
+    <string name="notification_permission_title">Bildirim İzni</string>
+    <string name="notification_permission_message">Uygulamanın size bildirim gönderebilmesi için bildirim iznine ihtiyacı var.</string>
+    <string name="location_permission_title">Konum İzni</string>
+    <string name="location_permission_message">Konum tabanlı hatırlatıcılar için konum iznine ihtiyacı var.</string>
+    <string name="settings">Ayarlar</string>
+    <string name="cancel">İptal</string>
+    <string name="save_note">Notu Kaydet</string>
+
+    <string name="map_load_error">Harita yüklenemedi</string>
+    <string name="enter_address">Lütfen bir adres girin</string>
+    <string name="address_not_found">Adres bulunamadı</string>
+    <string name="address_search_error">Adres arama hatası</string>
+    <string name="select_location">Lütfen bir konum seçin</string>
+    <string name="location_permission_required">Konum izni gerekli</string>
+    <string name="foreground_location_permission_required">Foreground servis konum izni gerekli</string>
+    <string name="selected_location">Seçilen Konum: %1$s</string>
+    <string name="unknown_location">Bilinmeyen Konum</string>
+
+    <string name="title_notes_required">Başlık ve not alanı boş olamaz</string>
+    <string name="location_selected">Konum seçildi: %1$s</string>
+    <string name="alarm_set">Alarm Ayarlandı!</string>
+    <string name="default_reminder_title">Hatırlatıcı</string>
+    <string name="default_alarm_note">Alarm ayarlandı</string>
+    <string name="auto_save_success">Not otomatik olarak kaydedildi</string>
+    <string name="alarm_cleared_after_notification">Alarm gerçekleştikten sonra temizlendi</string>
+
+    <string name="delete_confirmation_message">Notu silmek istediğinize\nemin misiniz?</string>
+    <string name="delete_no">Hayır</string>
+    <string name="delete_yes">Evet</string>
+
+    <!-- Firebase Auth Strings -->
+    <string name="login">Giriş Yap</string>
+    <string name="register">Kayıt Ol</string>
+    <string name="email">E-posta</string>
+    <string name="password">Şifre</string>
+    <string name="forgot_password">Şifremi Unuttum</string>
+    <string name="or">veya</string>
+    <string name="sign_in_with_google">Google ile Giriş Yap</string>
+    <string name="google_sign_in">Google ile Giriş Yap</string>
+    <string name="welcome_message">Hoş geldiniz, %1$s</string>
+    <string name="auth_error">Kimlik doğrulama hatası: %1$s</string>
+    <string name="password_reset_sent">Şifre sıfırlama e-postası gönderildi</string>
+    <string name="password_reset_failed">Şifre sıfırlama başarısız: %1$s</string>
+    <string name="please_fill_all_fields">Lütfen tüm alanları doldurun</string>
+    <string name="password_min_length">Şifre en az 6 karakter olmalıdır</string>
+    <string name="please_enter_email">Lütfen e-posta adresinizi girin</string>
+    <string name="sync_completed">Senkronizasyon tamamlandı</string>
+    <string name="sync_error">Senkronizasyon hatası: %1$s</string>
+    <string name="user_not_signed_in">Kullanıcı giriş yapmamış</string>
+    <string name="logout">Çıkış Yap</string>
+    <string name="logout_confirmation">Çıkış yapmak istediğinize emin misiniz?</string>
+    <string name="default_web_client_id">647259472954-t6bhqa0mh2cflhd6psnceq0h0vu8n8ni.apps.googleusercontent.com</string>
+
+
+
+    <!-- Delete Dialog Strings -->
+    <string name="delete_notes_title">Notları Sil</string>
+    <string name="delete_notes_message">%1$d notu silmek istediğinizden emin misiniz?</string>
+    <string name="delete">Sil</string>
+
+    <!-- Error Messages -->
+    <string name="data_loading_error">Veri yükleme hatası: %1$s</string>
+
+    <!-- Common Actions -->
+    <string name="send">Gönder</string>
+
+    <!-- Firebase Auth Error Messages -->
+    <string name="error_invalid_email">Geçersiz e-posta adresi</string>
+    <string name="error_weak_password">Şifre çok zayıf</string>
+    <string name="error_email_already_in_use">Bu e-posta adresi zaten kullanımda</string>
+    <string name="error_user_not_found">Kullanıcı bulunamadı</string>
+    <string name="error_wrong_password">Yanlış şifre</string>
+    <string name="error_network_error">Ağ bağlantı hatası</string>
+    <string name="error_google_sign_in_failed">Google ile giriş başarısız</string>
+    <string name="error_unknown">Bilinmeyen hata oluştu</string>
+    <string name="error_too_many_requests">Çok fazla deneme yapıldı. Lütfen bir süre bekleyin.</string>
+    <string name="error_user_disabled">Hesabınız devre dışı bırakılmış.</string>
+    <string name="error_operation_not_allowed">Bu işlem şu anda izin verilmiyor.</string>
+
+    <!-- Account Delete Strings -->
+    <string name="delete_account_title">Hesabı Sil</string>
+    <string name="delete_account_confirmation">Hesabınızı silmek istediğinize emin misiniz?\n\nBu işlem geri alınamaz ve tüm verileriniz kalıcı olarak silinecektir.</string>
+    <string name="delete_account_success">Hesabınız başarıyla silindi</string>
+    <string name="delete_account_failed">Hesap silme başarısız: %1$s</string>
+    <string name="delete_account_menu">Hesabı Sil</string>
+    <string name="delete_account_direct">Hemen Sil</string>
+    <string name="delete_account_request">Talep Gönder</string>
+    <string name="error_user_not_logged_in">Kullanıcı giriş yapmamış</string>
+    <string name="error_token_not_available">Token mevcut değil</string>
+    <string name="error_token_refresh_failed">Token yenileme başarısız</string>
+    <string name="error_invalid_request">Geçersiz istek</string>
+    <string name="error_unauthorized">Yetkisiz erişim</string>
+    <string name="error_forbidden">Erişim reddedildi</string>
+    <string name="error_token_expired">Token süresi dolmuş</string>
+    <string name="error_invalid_token">Geçersiz token</string>
+    <string name="error_invalid_response">Geçersiz yanıt</string>
+    <string name="error_cannot_open_url">URL açılamadı</string>
+
+</resources>
